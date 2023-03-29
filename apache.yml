@@ -17,5 +17,6 @@
 
   - name: Copy index.html
     ansible.builtin.copy:
+      remote_src: yes
       src: /home/student/rhel-workshop/1.3-playbook/web.html
       dest: /var/www/html/index.html
