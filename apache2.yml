@@ -14,5 +14,6 @@
       state: started
   - name: copy web.html
     copy:
+      remote_src: true
       src: /home/student/rhel-workshop/ansible-files/files/web.html
       dest: /var/www/html/index.html
