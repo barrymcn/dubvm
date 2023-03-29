@@ -1,6 +1,6 @@
 ---
 - name: Apache server installed
-  hosts: web
+  hosts: node1
   become: yes
   tasks:
   - name: latest Apache version installed
@@ -14,5 +14,5 @@
       state: started
   - name: copy web.html
     copy:
-      src: web.html
+      src: /home/student/rhel-workshop/ansible-files/files/web.html
       dest: /var/www/html/index.html
